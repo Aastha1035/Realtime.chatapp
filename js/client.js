@@ -34,7 +34,7 @@ socket.on('left', name =>{
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    const message = messageInput.Value;
+    const message = messageInput.value;
     append(`You: ${message}`, 'right');
     socket.emit('send', message);
     messageInput.value = ''
